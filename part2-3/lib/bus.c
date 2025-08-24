@@ -14,6 +14,7 @@
 // 0xFF00 - 0xFF7F : I/O Registers
 // 0xFF80 - 0xFFFE : Zero Page
 
+//这是总线读，不是平时读内存数据，所以没有填入数据大小
 u8 bus_read(u16 address) {
     if (address < 0x8000) {
         //ROM Data
